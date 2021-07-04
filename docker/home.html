@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/mycss.css">
+      <link rel="stylesheet" href="css/dashboard.css">
+      <link rel="stylesheet" href="css/output.css">
+   </head>
+   <body onload="both()">
+      <button class="tablink" onclick="openPage('Images', this, '#00203FFF')" >Images</button>
+      <button class="tablink" onclick="openPage('Containers', this, '#2A1B3D')" id="defaultOpen">Containers</button>
+      <button class="tablink" onclick="openPage('Dockerfile', this, 'white')">Dockerfile</button>
+      <!------------Dashboard---------- -->
+      <div id="Dashboard" class="tabcontent">
+         <h3>Dashboard</h3>
+         <div>
+            <h2><b>Docker Images</b></h2>
+            <pre>
+            <p id="d_img"></p>
+         </pre>
+         </div>
+      </div>
+      <!------------Images---------- -->
+      <div id="Images" class="tabcontent">
+         <div class="clearfix">
+            <div class="box1">
+               <h3>Images</h3>
+               <div class="btn-group">
+                  <button onclick="list_img();">List Images</button>
+                  <button onclick="pull_img();">Download Image</button>
+                  <button onclick="rm_img();">Remove Image</button>
+               </div>
+            </div>
+            <div class="box2" >
+               <p id="mid"></p>
+            </div>
+            <div class="box3" style="background-color:black">
+               <pre>
+            <p id="op">Output...</p>
+         </pre>
+            </div>
+         </div>
+         <!-- <div class="footer">
+            <div class="box" style="background: red;"></div>
+            <div class="box stack-top" style="background: blue;"></div>
+            </div> -->
+      </div>
+      <!------------Containers---------- -->
+      <div id="Containers" class="tabcontent">
+         <div class="clearfix">
+            <div class="box1">
+               <div class="btn-group">
+                  <button onclick="list_con();"><b>List Running Containers</b></button>
+                  <button onclick="list_con_all();"><b>List all Containers</b></button>
+                  <button onclick="con_name();"><b>Launch Container</b></button>
+                  <button onclick="rm_con_name();"><b>Remove Container</b></button>
+               </div>
+            </div>
+            <div class="box2">
+               <p id="mid_con"></p>
+            </div>
+            <div class="draw" style="background-color: #05386B">
+               <pre>
+            <p id="op_con">Output...</p>
+         </pre>
+            </div>
+         </div>
+         <!-- <div class="footer">
+            <div class="box" style="background: #05386B;"></div>
+            <div class="box stack-top" style="background: #A4B3B6;">
+               <h2 class="f_text" onclick="both();">Images</h2>
+               <div id="o_img">output</div>
+            </div>
+         </div> -->
+      </div>
+      <!------------Dockerfile---------- -->
+      <div id="Dockerfile" class="tabcontent">
+         <h3>Dockerfile</h3>
+         <div class="bgimg">
+            <div class="middle">
+               <h1>COMING SOON</h1>
+               <hr>
+               <p id="demo" style="font-size:30px"></p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="error" class="center">
+         </div>
+      </div>
+      <script src="js/myScript.js"></script>
+      <script src="js/images.js"></script>
+      <script src="js/dashboard.js"></script>
+      <script src="js/containers.js"></script>
+      <script src="js/dockerfil.js"></script>
+   </body>
+</html>

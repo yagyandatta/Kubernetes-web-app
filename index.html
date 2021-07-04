@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://wallpapercave.com/wp/wp2757874.gif');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+.docker_image {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+  .k8s_image {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+  }
+
+
+  .container {
+    display: flex;
+    height: 100%;
+}
+
+.container__right {
+    flex: 1;
+    /* height: 100%; */
+    background-color: #3d80fa;
+}
+.container__left {
+    flex: 1;
+    /* height: 100%; */
+    background-color: #54ecfd;
+}
+
+/* ZOOM */
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  /* SHADOW */
+  .box {
+    transition: box-shadow .3s;
+    /* margin: 50px; */
+    /* background: #fff; */
+    float: left;
+    
+  }
+  .box2{
+    transition: box-shadow .3s;
+    float: right;
+    
+  }
+  .box:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,.2); 
+  }
+  .box2:hover {
+    box-shadow: 30px 0 0px red; 
+  }
+  .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+  </style>
+
+<body>
+  <div class="bgimg">
+    <div class="container__left box2">
+      <div class="docker_image zoom"> <img id="docker-button" src="https://cdn.freebiesupply.com/logos/large/2x/docker-logo-png-transparent.png" alt="logo" height="230px" width="300px"> </div>
+    </div>
+
+    <!-- Right content -->
+    <div class="container__right box">
+      <div class="k8s_image zoom"><img id="k8s-button" src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png" alt="logo" height="200px" width="400px"> </div>
+    </div>
+    <div class="middle">
+      <h1>GROUP-09_15</h1>
+      <hr>
+      <p id="demo" style="font-size:30px"></p>
+    </div>
+  </div>
+
+<script>
+document.getElementById("docker-button").onclick = function() {
+    location.href = "docker/home.html";
+}
+
+document.getElementById("k8s-button").onclick = function () {
+        location.href = "home.html";
+   }
+</script>
+</body>
+
+</html>
+
+

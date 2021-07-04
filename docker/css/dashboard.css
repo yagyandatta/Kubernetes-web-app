@@ -1,0 +1,25 @@
+.bgimg {
+    /* background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif'); */
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #00203FFF;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  
+  
+  .middle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/mycss.css">
+      <link rel="stylesheet" href="css/dashboard.css">
+      <link rel="stylesheet" href="css/output.css">
+   </head>
+   <body onload="both()">
+      <button class="tablink" onclick="openPage('Containers', this, '#2A1B3D')" id="defaultOpen">Kubernetes</button>
+      <button class="tablink" onclick="openPage('Dockerfile', this, 'white')">Extra</button>
+
+      <!------------pods---------- -->
+      <div id="Containers" class="tabcontent">
+         <div class="clearfix">
+            <div class="box1">
+               <div class="btn-group">
+                  <button onclick="list_con();"><b>List Running Pods</b></button>          
+                  <button onclick="con_name();"><b>Launch pod</b></button>
+                  <button onclick="con_name1();"><b>Launch deployment</b></button>
+                  <button onclick="con_name2();"><b>scale pods</b></button>
+                  <button onclick="con_name3();"><b>expose pod</b></button>
+                  <button onclick="list_con1();"><b>verify exposed ip</b></button> 
+                  <button onclick="rm_con_name();"><b>Delete pod</b></button>
+                  <button onclick="list_con2();"><b>delete complete environment</b></button>
+               </div>
+            </div>
+            <div class="box2">
+               <p id="mid_con"></p>
+            </div>
+            <div class="draw" style="background-color: #05386B">
+               <pre>
+            <p id="op_con">Output...</p>
+         </pre>
+            </div>
+         </div>
+         <!-- <div class="footer">
+            <div class="box" style="background: #05386B;"></div>
+            <div class="box stack-top" style="background: #A4B3B6;">
+               <h2 class="f_text" onclick="both();">Images</h2>
+               <div id="o_img">output</div>
+            </div>
+         </div> -->
+      </div>
+      <!------------Dockerfile---------- -->
+      <div id="Dockerfile" class="tabcontent">
+         <h3>Dockerfile</h3>
+         <div class="bgimg">
+            <div class="middle">
+               <h1>COMING SOON</h1>
+               <hr>
+               <p id="demo" style="font-size:30px"></p>
+            </div>
+            <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="error" class="center">
+         </div>
+      </div>
+      <script src="js/myScript.js"></script>
+      <script src="js/images.js"></script>
+      <script src="js/dashboard.js"></script>
+      <script src="js/containers.js"></script>
+      <script src="js/dockerfil.js"></script>
+   </body>
+</html>

@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box
+}
+
+
+/* Set height of body and the document to 100% */
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+}
+  
+
+
+
+
+.tablink {
+	background-color: #555;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 50%;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+}
+
+#Dashboard {
+	background-color: red;
+}
+
+#Images {
+	background-color: #00203FFF;
+}
+
+#Containers {
+	background-color: #2A1B3D;
+}
+
+#Dockerfile {
+	background-color: white;
+}
+
+
+/* button css */
+
+.btn-group button {
+	background-color: #05386B;
+	/* Green background */
+	border: 1px solid #f2f2f2;
+	/* Green border */
+	border-radius: 10px;
+	color: white;
+	/* White text */
+	padding: 10px 24px;
+	/* Some padding */
+	cursor: pointer;
+	/* Pointer/hand icon */
+	width: 100%;
+	/* Set a width if needed */
+	display: block;
+	/* Make the buttons appear below each other */
+	margin-top: 10px;
+}
+
+.btn-group button:not(:last-child) {
+	border-bottom: none;
+	/* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: #3e8e41;
+}
+
+.boxed {
+	border: 1px solid green;
+}
+
+
+/* images block... */
+* {
+	box-sizing: border-box;
+}
+
+.box1 {
+	float: left;
+	/* width: 33.33%; */
+	width: 20%;
+	padding: 50px;
+}
+
+.box2 {
+	float: left;
+	/* width: 33.33%; */
+	width: 30%;
+	padding: 50px;
+}
+
+.box3 {
+	float: left;
+	width: 50%;
+	padding: 100px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.op {
+	color: black;
+	text-align: center;
+}
+.op_con {
+	color: #EDF5E1;
+	text-align: center;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+
+
+
+
+  /* footer */
+
+  .box{
+	width: 40%;
+	height: 30%;            
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+  }
+
+  .stack-top{
+	z-index: 9;
+	margin: 20px; /* for demo purpose  */
+}
+
+.f_text{
+	text-align: center;
+	color: #05386B;
+}
